@@ -177,3 +177,5 @@ resultsDF <- data.frame(chi2 = c(100 - vecSAG100chi2, 100 - vecSAG600chi2, 100 -
 row.names(resultsDF) <- c("SAG100", "SAG600","MOU100", "MOU600","BAI100", "BAI600","BAL100", "BAL585" )
 
 resultsDF
+
+write.csv(x = resultsDF, file = "/home/alice/Desktop/Git/Article3_review/output/resultsDF.csv", quote = "F")
