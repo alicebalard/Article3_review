@@ -116,11 +116,13 @@ mybootstrap <- function(numBS){
   })
 }
 
-numBS=2
+numBS=1000
 
 system.time(
 try <- mybootstrap(numBS)
 )
+# user  system elapsed 
+# 260.088   0.178 260.212 
 
 vecSAG100chi2 <- vector(); vecSAG100KW <- vector(); vecSAG100ML <- vector()
 vecSAG600chi2 <- vector(); vecSAG600KW <- vector(); vecSAG600ML <- vector()
